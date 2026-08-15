@@ -2,9 +2,9 @@ version: 2
 updates:
   - package-ecosystem: "pip"
     directory: "/"
+    target-branch: "develop"
     pull-request-branch-name:
-      # Separate sections of the branch name with a hyphen
-      # for example, `dependabot-npm_and_yarn-next_js-acorn-6.4.1`
       separator: "-"
     schedule:
-      interval: "daily"
+      interval: "cron"
+      cron: "1 13 * * *"
